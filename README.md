@@ -41,7 +41,16 @@
 将S-AES算法通过三重加密进行扩展，下面两种模式选择一种完成：
 (1)按照32 bits密钥Key(K1+K2)的模式进行三重加密解密，
 (2)使用48bits(K1+K2+K3)的模式进行三重加解密。
+使用（2）
 
 ![3b5f22ae0e89a36e0e19dc77842ca9fc](https://github.com/user-attachments/assets/c3711bf5-93b1-4876-92dd-d6e6129b0ae4)
+
+3.5 第5关：工作模式
+基于S-AES算法，使用密码分组链(CBC)模式对较长的明文消息进行加密。注意初始向量(16 bits) 的生成，并需要加解密双方共享。
+在CBC模式下进行加密，并尝试对密文分组进行替换或修改，然后进行解密，请对比篡改密文前后的解密结果。
+
+![c0f2dac2748c526328dfed0fa6f5d7ab](https://github.com/user-attachments/assets/9225bb75-7a06-4059-a762-854a9276e7d2)
+
+![292626e4ca311af1417fa5090b997c6f](https://github.com/user-attachments/assets/3099baa3-9773-4a55-a094-9dd8ce3b84b2)
 
 
