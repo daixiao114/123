@@ -22,3 +22,26 @@
 
 ![{}@9S$3KFRV96Z)IOG3}A6L](https://github.com/user-attachments/assets/cb013d79-b3c8-4e4e-8043-cfffedf5df27)
 
+
+3.4 第4关：多重加密
+3.4.1 双重加密
+将S-AES算法通过双重加密进行扩展，分组长度仍然是16 bits，但密钥长度为32 bits。
+
+
+
+3.4.2 中间相遇攻击
+假设你找到了使用相同密钥的明、密文对(一个或多个)，请尝试使用中间相遇攻击的方法找到正确的密钥Key(K1+K2)。
+
+![574bef53819689c941679660307913a0](https://github.com/user-attachments/assets/8d2b845a-869c-44fe-b23b-a6f87bd7b073)
+![d060662269982da10c38c9f8df56164a](https://github.com/user-attachments/assets/1527130a-0ac2-4a1b-94cf-7935f333c1ec)
+
+
+
+3.4.3 三重加密
+将S-AES算法通过三重加密进行扩展，下面两种模式选择一种完成：
+(1)按照32 bits密钥Key(K1+K2)的模式进行三重加密解密，
+(2)使用48bits(K1+K2+K3)的模式进行三重加解密。
+
+![3b5f22ae0e89a36e0e19dc77842ca9fc](https://github.com/user-attachments/assets/c3711bf5-93b1-4876-92dd-d6e6129b0ae4)
+
+
